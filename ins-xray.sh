@@ -131,8 +131,9 @@ cd
 rm -fr /etc/nginx/sites-enabled/default
 rm -fr /etc/nginx/sites-available/default
 wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/gigclone/multi/main/y/nginx.conf" 
+wget -q -O /etc/xray/config.json https://raw.githubusercontent.com/gigclone/multi/main/y/config.json
 mkdir -p /home/vps/public_html
-wget -q -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/gigclone/multi/main/y/vps.conf"
+#wget -q -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/gigclone/multi/main/y/vps.conf"
 
 wget -q -O xraymode.sh https://raw.githubusercontent.com/gigclone/xray/main/xraymode.sh && chmod +x xraymode.sh && ./xraymode.sh
 sleep 1 
